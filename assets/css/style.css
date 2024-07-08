@@ -1,0 +1,112 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header
+{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 10px;
+    overflow-x: hidden;
+}
+
+.header a
+{
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+
+  .header a.logo
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+  .header a:hover
+{
+    color: rgb(216, 193, 117);
+}
+
+  .header-right
+{
+    float: right;
+    padding: 0px 20px;
+}
+
+  @media screen and (max-width: 500px)
+{
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+}
+
+body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.containcenter
+{
+  background-color: #252525;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.center
+{
+    float: left;
+    color: white;
+    padding: 20px 0px;
+    margin: 50px;
+    font-size: 20px;
+}
+
+.footerbottom
+{
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerbottom p
+{
+    font-size: 10px;
+    color: white;
+}
+
+.designer
+{
+    text-align: center;
+    font-size: 10px;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
