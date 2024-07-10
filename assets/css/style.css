@@ -3,8 +3,29 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.image
+{
+  float: left;
+  width: 40px;
+  height: auto;
+}
+
+.image:hover
+{
+  animation: bounce 1.5s infinite alternate;
+}
+
+@keyframes bounce
+{
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-20px);}
+  60% {transform: translateY(-15px);}
+}
+
+
 .header
 {
+    position: absolute;
     width: 100%;
     position: sticky;
     top: 0;
@@ -16,8 +37,9 @@
 
 .header a
 {
+    opacity: 1;
     float: left;
-    color: rgb(255, 255, 255);
+    color: rgb(160, 160, 160);
     text-align: center;
     padding: 5px;
     text-decoration: none;
@@ -32,12 +54,13 @@
 {
     font-size: 20px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(160, 160, 160);
 }
 
   .header a:hover
 {
-    color: rgb(216, 193, 117);
+    opacity: 1;
+    color: rgb(255, 255, 255);
 }
 
   .header-right
@@ -87,21 +110,88 @@ body
     font-size: 20px;
 }
 
+.buttons #res
+{
+  font-size: 15px;
+  background: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.buttons #res:hover
+{
+  color: #000;
+  background: #1dacff;
+}
+
+.buttons #proj
+{
+  font-size: 15px;
+  background: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.buttons #proj:hover
+{
+  color: #000;
+  background: #ff2600;
+}
+
+.buttons #dev
+{
+  font-size: 15px;
+  background: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.buttons #dev:hover
+{
+  color: #000;
+  background: #f0ce0c;
+}
+
+.buttons #wish
+{
+  font-size: 15px;
+  background: rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.buttons #wish:hover
+{
+  color: #000;
+  background: #b2f128;
+}
+
 .footerbottom
 {
+    position: relative;
     background-color: #000;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
 .footerbottom p
 {
+    background-color: #000;
     font-size: 10px;
     color: white;
 }
 
 .designer
 {
+    background-color: #000;
     text-align: center;
     font-size: 10px;
     opacity: 0.7;
